@@ -1,0 +1,17 @@
+.container .nav{
+    display: flex;
+}
+
+.container .nav .nav-menu{
+    margin: auto 3% auto 0%;
+    display: flex;
+}
+
+.container .nav .addvt{
+    margin: auto auto;
+}
+
+.container .nav .addvt marquee span{
+    color: brown;
+    font-weight: 600;
+}

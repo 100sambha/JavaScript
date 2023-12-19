@@ -4,10 +4,11 @@
 
 
 // Example
-const PI_1 = 3.1415;
+const PI = 3.1415;
 // PI = 3.14;           // const variable cannot be reassigned
+console.log(PI);
 
 
-// const PI_2;             // const variables must be assigned a value when they are declared
-// PI_2 = 3.14159265359;
-
+// const PI;             // const variables must be assigned a value when they are declared
+// PI = 3.14159265359;
+// console.log(PI);

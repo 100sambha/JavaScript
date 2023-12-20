@@ -58,7 +58,7 @@ console.log(newFruits);
 console.log(newFruits.get(apple));
 
 
-// fruits.delete("Lemon");
-// console.log(fruits);
-// fruits.clear();
-// console.log(fruits);
+fruits.delete("Lemon");
+console.log(fruits);
+fruits.clear();
+console.log(fruits);

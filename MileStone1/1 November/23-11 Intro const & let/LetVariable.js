@@ -3,19 +3,19 @@
 //                            >let cannot be Redeclared in the same scope
 
 
-// Ex
 
+// Ex
 
 {
     let x = 2;
     console.log(x);
 }
-
 // console.log(x);             // We can't use let outside
 
 
-// console.log(p);                // Variable must be defined before use
 
+
+// console.log(p);                // Variable must be defined before use
 let p = 10;
 console.log(p);
 

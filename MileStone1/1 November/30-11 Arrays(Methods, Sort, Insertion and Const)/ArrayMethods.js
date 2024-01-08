@@ -38,3 +38,16 @@ const combineArray = [empNames, junEmp, interNames];
 console.log(combineArray);
 
 console.log(combineArray.flat());
+
+console.log(empNames.splice(2,0,"Sarkar", "Raj"));
+console.log(empNames);
+console.log(empNames.splice(0,3,"Test"));
+console.log(empNames);
+console.log(empNames.splice(0,1));
+console.log(empNames);
+// console.log(empNames.toSpliced(0,1));
+
+
+console.log(empNames.slice(2));
+console.log(empNames.slice(1,3));
+console.log(empNames.slice(1));

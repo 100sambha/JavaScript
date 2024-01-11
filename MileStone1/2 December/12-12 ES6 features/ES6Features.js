@@ -62,3 +62,53 @@ letters.add("B");
 letters.add("C");
 letters.add("D");
 letters.add("E");
+
+
+class Test{
+    constructor(name,year){
+        this.name = name;
+        this.year = year;
+    }
+}
+
+const obj = new Test("Sambhaji", "1998");
+console.log(obj.name,obj instanceof Test,obj);
+
+
+const myPromises = new Promise(function(resolve, reject){
+    setTimeout(function(){resolve("I Love You Jaan")},3000);
+});
+
+myPromises.then(function(value){
+    console.log(value);
+});
+
+
+const person = {
+    fName : "Sarkar",
+    lName : "Raj",
+    active : true,
+    age : 25
+}
+let id = Symbol('id');
+person[id] = 123123;
+console.log(person);
+console.log(person[id]);
+
+function getAddition(x = 0, y = 0){
+    return x + y;
+}
+console.log(getAddition());
+console.log(getAddition(10));
+console.log(getAddition(10,20));
+
+
+function getSumAll(...args){
+    let sum = 0;
+    for(let i = 0; i < args.length; i++){
+        sum+= args[i];
+    }
+    return sum;
+}
+console.log(getSumAll(2,3,5,4,1,6));
+

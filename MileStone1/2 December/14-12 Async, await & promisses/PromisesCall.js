@@ -57,6 +57,8 @@ resPromise.then(function (val) {
     console.log(val);
 });
 
+
+
 function readFile(myCallbackFunc) {
     let req = new XMLHttpRequest();
     req.onload = function () {

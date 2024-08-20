@@ -1,0 +1,7 @@
+{
+    "employees":[
+        {"firstName":"Sambhaji", "age":25},
+        {"firstName":"Nil", "age":26},
+        {"firstName":"Aksh", "age":21}
+    ]
+}

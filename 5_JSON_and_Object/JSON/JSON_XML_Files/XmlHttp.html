@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Fetch a JSON file with XMLHttpRequest</h2>
+<p id="demo"></p>
+
+<script>
+// const xmlhttp = new XMLHttpRequest();
+// xmlhttp.onload = function() {
+//   const myObj = JSON.parse(this.responseText);
+//   document.getElementById("demo").innerHTML = myObj[0].username;
+// }
+// xmlhttp.open("GET", "https://jsonplaceholder.typicode.com/users");
+// xmlhttp.send();
+
+// xmlhttp.open("GET", "json_demo_array.txt", true);                    to extract array from server we need to pass boolean value with that
+
+// for post request
+// xmlhttp.open("POST", "json_demo_db_post.php");
+// xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+// xmlhttp.send("x=" + dbParam);
+
+
+console.log(window.location);
+const myObj = { name: "John", age: 31, city: "New York" };
+const myJSON = JSON.stringify(myObj);
+window.location = "demo.php?x=" + myJSON;
+</script>
+
+</body>
+</html>

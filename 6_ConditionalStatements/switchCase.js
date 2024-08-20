@@ -1,4 +1,4 @@
-let num = 2;
+let num = 4;
 switch(num){
     case "one":
     case 1:console.log("MonDay");

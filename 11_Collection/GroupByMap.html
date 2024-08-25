@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    let fruits = [
+        { name: "apples", quantity: 110 },
+        { name: "bananas", quantity: 50 },
+        { name: "oranges", quantity: 130 },
+        { name: "kiwi", quantity: 15 }
+    ];
+
+    const re = Map.groupBy(fruits, myCallback);
+
+    function myCallback({ quantity }) {
+        return quantity > 100 ? "OK" : "LOW";
+    }
+    console.log(re);
+
+
+
+    for (let r of re.get("OK")) {
+        console.log(r.name);
+    }
+</script>
+
+<body>
+    <h1>Group By Map</h1>
+</body>
+
+</html>

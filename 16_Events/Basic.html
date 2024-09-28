@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="Event.js"></script>
+</head>
+<body>
+    
+    <button onclick="document.getElementsByClassName('datetime')[0].innerHTML += Date()">Show me time and date</button>
+    <h2 class="datetime">Date Time :-</h2>
+    
+    <button onclick="this.innerHTML = Date()">Show me time and date</button>
+    
+    <h1 onmouseover="callmouseover()">on mouse over</h1>
+    
+    <h1 id="name">Name</h1>
+    <input type="text" onkeypress="keypressed()" onchange="saveUserName()" name="username" id="username"/>
+    
+    <p id="square">10</p>
+    <button onclick="findSquare()">Find Square</button>
+
+    <h4 onclick="changeBackground()">Change Background</h4>
+    
+</body>
+</html>

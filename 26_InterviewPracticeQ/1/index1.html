@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning</title>
+</head>
+<body>
+    
+    <button onclick="this.style.display='none'">Click Me</button>
+
+
+    <button onclick=sayHi()>Say Something</button>
+    <h2>Counter : <span id="counter">0</span></h2>
+    <h1 id="sayhi"></h1>
+    <script>
+        function sayHi(){
+            let counterEle = document.getElementById("counter");
+            counter = counterEle.textContent
+            counter++
+            counterEle.innerHTML = counter
+
+            let text = document.getElementById("sayhi");
+            text.style.color="red";
+            text.innerHTML+="hi<br>"
+        }
+    </script>
+</body>
+</html>
